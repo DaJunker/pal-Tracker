@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping(headers = {"Content-type=application/vnd.pal-tracker.v2+json"})
 public class TimeEntryController {
     private final TimeEntryRepository timeEntryRepository;
 
